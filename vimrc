@@ -28,9 +28,7 @@ filetype plugin indent on
 
 " Source initialization files
 " ---------------------------
-
 runtime! init/**.vim
-
 
 " Machine-local vim settings - keep this at the end
 " --------------------------
