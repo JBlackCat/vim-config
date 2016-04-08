@@ -31,11 +31,11 @@ if executable("fzf")
   endif
 endif
 
-set list                        " Show whitespace
+set list                        " Show whitespace and show tab as a space, so don't show ^I for tab
 if has("gui_running")
-  set listchars=trail:·
+  set listchars=tab:\ \  ,trail:·
 else
-  set listchars=trail:~
+  set listchars=tab:\ \ ,trail:~
 endif
 
 set showmatch                   " Show matching brackets
@@ -97,12 +97,13 @@ endif
 au FileType go,perl,make setl tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab nolist
 
 " Indentation guides configuration
-let g:indent_guides_enable_on_vim_startup = 1
+" let g:indent_guides_enable_on_vim_startup = 1 " if open a directory indent_guides throws an error
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_start_level = 2
 let g:indent_guides_guide_size = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=black   ctermbg=236
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=darkgray ctermbg=235
+"Colors set for dracula theme
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=23
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=53
 
 " disable concealing of quotes in json files
 let g:vim_json_syntax_conceal = 0
