@@ -120,3 +120,5 @@ map <leader>	 :set nolist<CR>
 " jsdoc shortcut
 nmap <leader>d <Plug>(jsdoc)
 
+" NERDTree Toggle
+map <C-\> :NERDTreeToggle<CR>
