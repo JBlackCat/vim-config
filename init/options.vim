@@ -1,3 +1,4 @@
+" based on vim, modified where necessary for nvim
 set guifont=Menlo:h12
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
@@ -8,10 +9,10 @@ set showcmd                     " Show typed command prefixes while waiting for 
 set mouse=a                     " Use mouse support in XTerm/iTerm.
 
 set expandtab                   " Use soft tabs
-set tabstop=2                   " Tab settings
+set tabstop=4                   " Tab settings
 set autoindent
 set smarttab                    " Use shiftwidth to tab at line beginning
-set shiftwidth=2                " Width of autoindent
+set shiftwidth=4                " Width of autoindent to match single tab.
 set number                      " Line numbers
 set nowrap                      " No wrapping
 set tw=0                        " Stop vim breaking text to new line after so many columns
@@ -88,8 +89,10 @@ if has("gui_running")
   set noballooneval
 endif
 
-if has('mouse_sgr')
-    set ttymouse=sgr
+if !has('nvim')
+    if has('mouse_sgr')
+        set ttymouse=sgr
+    endif
 endif
 
 " filetype specific options
