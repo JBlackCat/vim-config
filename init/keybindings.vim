@@ -124,4 +124,4 @@ nmap <leader>d <Plug>(jsdoc)
 map <C-\> :NERDTreeToggle<CR>
 
 " NERDTree Focus
-map <leader>\ :NERDTreeFocus<CR>
+map <leader>\ :NERDTreeFocusToggle<CR>
