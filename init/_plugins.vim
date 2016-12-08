@@ -26,6 +26,8 @@ Plug 'vim-scripts/vcscommand.vim'
 Plug 'vito-c/jq.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
+Plug 'dracula/vim'
+
 Plug 'lepture/vim-jinja'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
