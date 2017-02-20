@@ -34,6 +34,14 @@ if executable("fzf")
   endif
 endif
 
+" set python and python 3 locations
+if executable("/usr/local/bin/python")
+	let g:python_host_prog = '/usr/local/bin/python'
+endif
+if executable("/usr/local/bin/python3")
+	let g:python3_host_prog = '/usr/local/bin/python3'
+endif
+
 " make extraneous whitespace so, so pretty
 set listchars=tab:▸\ ,trail:·,precedes:←,extends:→
 
@@ -119,6 +127,4 @@ let g:vim_markdown_folding_disabled = 1
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
-
-
 
