@@ -28,6 +28,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'sheerun/vim-polyglot' " install most major language syntax plugins
 Plug 'dracula/vim'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'mattn/emmet-vim'
 
 Plug 'lepture/vim-jinja'
 
