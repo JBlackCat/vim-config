@@ -128,3 +128,5 @@ let g:vim_markdown_folding_disabled = 1
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
+"emmet-vim "
+let g:user_emmet_leader_key='<C-E>'
